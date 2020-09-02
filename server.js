@@ -6,6 +6,9 @@ const app = express();
 // Connect database
 connectDB();
 
+// Init Midleware
+app.use(express.json({ extended: false }));
+
 app.get("/", (req, res) =>
     res.json({ message: "Welcome to the MyContacts API..." })
 );
