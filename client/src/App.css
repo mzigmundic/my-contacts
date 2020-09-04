@@ -308,6 +308,19 @@ img {
 }
 
 /* Forms */
+.form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.form-container h1,
+h2,
+h3 {
+    text-align: center;
+}
+
 input {
     margin: 1.2rem 0;
 }
