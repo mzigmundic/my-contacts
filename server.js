@@ -10,10 +10,6 @@ connectDB();
 // Init Midleware
 app.use(express.json({ extended: false }));
 
-app.get("/", (req, res) =>
-    res.json({ message: "Welcome to the MyContacts API..." })
-);
-
 // Define Routes
 app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
